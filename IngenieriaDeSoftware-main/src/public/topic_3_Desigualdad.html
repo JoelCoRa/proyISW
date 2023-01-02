@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Mathebasics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/topic.css">
+</head>
+<body>
+    <!-- MENU -->
+    <nav class="menu">
+        <div class="logo">
+            <p>M</p>
+            <p>b</p>
+            <span>v1.0</span>
+        </div>
+        <a href="/profile" class="user_p">
+            <div class="user_profile">
+                <img src="img/avatar_6.png" alt="avatar" id="avatar">
+                <p><%=user.user_name%></p>
+                <i class="icon icon-chevron-right"></i>
+            </div>
+        </a>
+        <ul class="options">
+            <li>
+                <a href="/dashboard">
+                    <i class="icon icon-home"></i>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/progress">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Progreso</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/juegos">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Juegos</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/recursos">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Recursos</span>
+                </a>
+            </li>
+            
+        </ul>
+        <a href="/logout" class="logout_buttom">
+            <i class="icon icon-log-out"></i>
+            <span>Cerrar sesión</span>
+        </a>
+    </nav>
+
+    <!-- DATA DISPLAY -->
+    <main class="content">
+        <div class="title">
+            <img src="img/bookmark-clay.png" alt="">
+            <h1>Álgebra: binomios, desigualdades, ecuaciones y función cuadrática</h1>
+        </div>
+        <div class="block-topic">
+            <p class="text-title">Desigualdades</p>
+            
+            <p>Una inecuación o desigualdad es lo mismo que una ecuación pero cambiando el signo de igualdad por signo(s) de desigualdad.
+                Los signos de desigualdad son </p>
+                <img src="img/topic3-4/D1.jpg" style="max-width: 100%;">
+                <p> Para resolver una desigualdad lineal se utilizan los mismos pasos que se usan para resolver una ecuación lineal. Como ejemplo, vamos a resolver la desigualdad
+                <br> 3 > x - 8</p>
+                <p>Sumando la misma cantidad a ambos lados: <br>
+                    3 > x - 8 <br>
+                    3 + 8 > x - 8 + 8 <br>
+                    11 > x <br></p>
+                <p>Una regla importante en las desigualdades es que cuando se multiplica o divide por un número negativo, el signo de desigualdad cambia.
+                    <br>Ejemplo:
+                    </p>
+                <img src="img/topic3-4/D2.jpg" style="max-width: 15%;">  
+
+                <p class="text-subtitle">Desigualdades que envuelven dos posibles soluciones</p>
+                <p>Hay desigualdades que envuelven dos posibles soluciones, una positiva y otra negativa. <br> Ejemplo</p>
+                <img src="img/topic3-4/D3.jpg" style="max-width: 40%;">
+                <img src="img/topic3-4/D4.jpg" style="max-width: 60%;">
+          
+                <br>
+                <br>
+                <p>Información de:</p>
+                <ul>
+                   <li type="circle"><a href="https://www.aulafacil.com/cursos/matematicas/algebra/desigualdades-l10964">Referencia 1</a></li>
+                   <li type="circle"><a href="https://www.montereyinstitute.org/courses/DevelopmentalMath/TEXTGROUP-9-14_RESOURCE/U10_L2_T1_text_final_es.html">Referencia 2</a></li>
+                <ul>
+            
+            
+                <div class="block-btn">
+                <a href="/3/3/2"><i class="icon icon-chevron-left"></i></a>
+                <a href="/3/3/4"><i class="icon icon-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <script src="js/profile_img.js"></script>
+</body>
+</html>

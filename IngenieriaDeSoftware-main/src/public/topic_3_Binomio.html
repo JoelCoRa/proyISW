@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Mathebasics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/topic.css">
+</head>
+<body>
+    <!-- MENU -->
+    <nav class="menu">
+        <div class="logo">
+            <p>M</p>
+            <p>b</p>
+            <span>v1.0</span>
+        </div>
+        <a href="/profile" class="user_p">
+            <div class="user_profile">
+                <img src="img/avatar_6.png" alt="avatar" id="avatar">
+                <p><%=user.user_name%></p>
+                <i class="icon icon-chevron-right"></i>
+            </div>
+        </a>
+        <ul class="options">
+            <li>
+                <a href="/dashboard">
+                    <i class="icon icon-home"></i>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/progress">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Progreso</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/juegos">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Juegos</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/recursos">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Recursos</span>
+                </a>
+            </li>
+            
+        </ul>
+        <a href="/logout" class="logout_buttom">
+            <i class="icon icon-log-out"></i>
+            <span>Cerrar sesión</span>
+        </a>
+    </nav>
+
+    <!-- DATA DISPLAY -->
+    <main class="content">
+        <div class="title">
+            <img src="img/bookmark-clay.png" alt="">
+            <h1>Álgebra: binomios, desigualdades, ecuaciones y función cuadrática</h1>
+        </div>
+        <div class="block-topic">
+            <p class="text-title">Binomios</p>
+            <p>Un binomio es un polinomio que consta de dos monomios.
+                P(x) = 2x^2 + 3x  [1]
+                </p>
+            <p>Recordemos que:</p>
+            <p>Un polinomio es una suma de términos en cuales cada unoes el producto de coeficientes y una o mas variables. Sus variables tienen exponentes enteros, no negativos y no aparecen en el denominador. Si su exponente es 0 entonces el termino se reduce a una constante.
+                Sus términos son de la forma  a_n * x^n donde a_n es alguna constante (es decir, en los que aparece solamente una variable) se llama polinomio en x y se representa como P(x), Q(x), f(x), etc.
+                </p>
+                <p>Ejemplos de polinomios</p>
+                <img src="img/topic3-4/B1.jpg" style="max-width: 50%;">
+
+                <p class="text-subtitle">Binomio al cuadrado</p>
+            <p>Para elevar un binomio al cuadrado (es decir, multiplicarlo por sí mismo), se suman los cuadrados de cada término más el doble del producto de ellos, dando:Para elevar un binomio al cuadrado (es decir, multiplicarlo por sí mismo), se suman los cuadrados de cada término más el doble del producto de ellos, dando:</p>
+                <img src="img/topic3-4/B2.jpg" style="max-width: 30%;">
+                <img src="img/topic3-4/B3.jpg" style="max-width: 20%;">
+                <img src="img/topic3-4/B4.jpg" style="max-width: 100%;">
+                <p>La expresión siguiente: a^2 + 2ab + b^2 se conoce como trinomio cuadrado perfecto. Cuando el segundo término es negativo, la igualdad que se obtiene es: (a-b)^2 = a^2 - 2ab- b^2 </p>
+                <img src="img/topic3-4/B5.jpg" style="max-width: 90%;">
+                
+                <p class="text-subtitle">Binomio al cubo</p>
+            <p>Un binomio al cubo es igual al cubo del primero más, o menos, el triple del cuadrado del primero por el segundo más el triple del primero por el cuadrado del segundo más, o menos, el cubo del segundo.</p>
+                <img src="img/topic3-4/B6.jpg" style="max-width: 50%;">
+                <img src="img/topic3-4/B7.jpg" style="max-width: 50%;">
+           
+                <p class="text-subsubtitle">Diferencia de cuadrados</p>
+            <p>Una diferencia de cuadrados es igual a una suma por diferencia.</p>
+            <img src="img/topic3-4/B8.jpg" style="max-width: 30%;">
+             <p class="text-subsubtitle">Suma de cubos</p>
+             <img src="img/topic3-4/B9.jpg" style="max-width: 30%;">
+                
+             <p class="text-subsubtitle">Diferencia de cubos</p>
+            <img src="img/topic3-4/B10.jpg" style="max-width: 30%;">
+
+             <p class="text-subsubtitle">Producto de dos binomios que tiene un termino comun</p>
+             <img src="img/topic3-4/B11.jpg" style="max-width: 30%;">
+                
+                <br>
+                <br>
+                <p>Información de:</p>
+                <ul>
+                   <li type="circle"><a href="https://www.superprof.es/diccionario/matematicas/algebra/binomio.html">Referencia 1</a>.</li>
+                   <li type="circle"><a href="https://www.itsx.edu.mx/downloads/CURSO_INDUCCION_MATEMATICAS.pdf ">Referencia 2</a></li>
+                   <li type="circle"><a href="https://www.mineduc.gob.gt/DIGECADE/documents/Telesecundaria/Recursos%20Digitales/2o%20Recursos%20Digitales%20TS%20BY-SA%203.0/06%20MATEMATICA/U8%20pp%20180%20productos%20notables.pdf">Referencia 3</a></li>
+                   <li type="circle"><a href="https://www.polinomios.org/binomio-de-newton-o-teorema-del-binomio-formula-y-ejercicios-resueltos/">Referencia 4</a></li>
+                <ul>
+            
+            
+                <div class="block-btn">
+                <a href="/3/3/2"><i class="icon icon-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <script src="js/profile_img.js"></script>
+</body>
+</html>

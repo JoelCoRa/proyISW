@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Mathebasics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/topic.css">
+</head>
+<body>
+    <!-- MENU -->
+    <nav class="menu">
+        <div class="logo">
+            <p>M</p>
+            <p>b</p>
+            <span>v1.0</span>
+        </div>
+        <a href="/profile" class="user_p">
+            <div class="user_profile">
+                <img src="img/avatar_6.png" alt="avatar" id="avatar">
+                <p><%=user.user_name%></p>
+                <i class="icon icon-chevron-right"></i>
+            </div>
+        </a>
+        <ul class="options">
+            <li>
+                <a href="/dashboard">
+                    <i class="icon icon-home"></i>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/progress">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Progreso</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/juegos">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Juegos</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/recursos">
+                    <i class="icon icon-pie-chart"></i>
+                    <span>Recursos</span>
+                </a>
+            </li>
+            
+        </ul>
+        <a href="/logout" class="logout_buttom">
+            <i class="icon icon-log-out"></i>
+            <span>Cerrar sesión</span>
+        </a>
+    </nav>
+
+    <!-- DATA DISPLAY -->
+    <main class="content">
+        <div class="title">
+            <img src="img/bookmark-clay.png" alt="">
+            <h1>Geometría: congruencia y semejanza de triángulos</h1>
+        </div>
+        <div class="block-topic">
+            <p class="text-title">Semejanza de triángulos</p>
+            <p>La semejanza de triángulos es una característica que hace que dos o más triángulos sean semejantes.Dos triángulos son semejantes cuando tienen sus ángulos iguales (o congruentes) y sus lados correspondientes (u homólogos) son proporcionales. Son lados homólogos opuestos a ángulos iguales.</p>
+            
+            <img src="img/topic3-4/S1.jpg" style="max-width: 40%;">
+            <p>En los triángulos semejantes se cumplen las condiciones siguientes:</p>   
+            <p>-Los ángulos homólogos son iguales:</p>
+            <img src="img/topic3-4/S2.jpg" style="max-width: 30%;">
+            <p>-Los lados homólogos son proporcionales:</p>
+                <img src="img/topic3-4/S3.jpg" style="max-width: 20%;">
+            <p>A r se le denomina razón de semejanza. </p>
+            <p>-Se cumple que la razón de los perímetros de dos triángulos semejantes es también la razón de semejanza y que la razón de sus áreas es el cuadrado de la razón de semejanza:
+            </p>
+                <img src="img/topic3-4/S4.jpg" style="max-width: 40%;">
+            
+            <p>Para saber si dos triángulos son semejantes no es necesario conocer sus tres ángulos y sus tres lados. Existen tres criterios para asegurarlo.</p>    
+            
+                <p class="text-subtitle">Criterios de semejanza de los ángulos</p>
+            <p>1.- Que tengan dos ángulos iguales. (El tercero lo será, porque los tres tienen que sumar 180°).
+            </p>    
+                <img src="img/topic3-4/S5.jpg" style="max-width: 30%;">
+            <p>Si α = α’ y β = β’, entonces los triángulos ABC y A’B’C’ son semejantes.</p>
+            <p class="text-subsubtitle">Criterios de igualdad de los ángulos:</p>    
+           
+            <p>- Los tres lados homólogos son paralelos. (figura superior).
+                <br>
+                Los tres lados de un triángulo son perpendiculares a los homólogos del otro triángulo
+            </p>
+                <img src="img/topic3-4/S6.jpg" style="max-width: 40%;">
+            <p>2.- Que tengan dos lados proporcionales y el ángulo comprendido entre ellos sea igual.</p>
+                <img src="img/topic3-4/S7.jpg" style="max-width: 40%;">
+                <p>Entonces </p>
+                <img src="img/topic3-4/S8.jpg" style="max-width: 20%;">
+                <p>Y, además, α =% α’, entonces los triángulos ABC y A’B’C’ son semejantes.
+                </p>
+            <p>3. Que tengan sus tres lados correspondientes proporcionales.</p>
+                <img src="img/topic3-4/S9.jpg" style="max-width: 20%;">
+            <p>Entonces</p>
+                <img src="img/topic3-4/S10.jpg" style="max-width: 20%;">
+            <p>Tenemos también que los triángulos ABC y A’B’C’ son semejantes.</p>
+
+                <p class="text-subsubtitle">Triángulos en posición de Tales</p>
+            <p>Cuando dos triángulos tienen un ángulo común y sus lados opuestos a ese ángulo son paralelos entre sí, entonces esos triángulos son semejantes.</p>    
+                <img src="img/topic3-4/S11.jpg" style="max-width: 20%;">
+            <p>Cuando dos triángulos tienen un ángulo común y sus lados opuestos a ese ángulo son paralelos entre sí, entonces esos triángulos son semejantes. <br> Y, por tanto, se cumple que:</p>
+                <img src="img/topic3-4/S12.jpg" style="max-width: 20%;">
+            <p>Ejemplo</p>
+                <img src="img/topic3-4/S13.jpg" style="max-width: 40%;">
+            <p>Los dos triángulos de la figura tienen sus lados de longitudes: 7,6 cm, 4,18 cm y 6,65 cm, el primero de ellos, mientras que los lados del segundo triángulo miden 4 cm, 2,2 cm y 3,5 cm. Se pregunta si estos triángulos son semejantes.</p>
+            <p>Solución: Como se saben los tres lados de los dos triángulos, aplicamos el tercer criterio de semejanza.</p>   
+            <img src="img/topic3-4/S14.jpg" style="max-width: 15%;">    
+            <p>Como la razón entre los lados correspondientes de los dos triángulos es la misma (razón de semejanza = 1,9) los dos triángulos son semejantes</p>
+            <p>Ejemplo 2</p>
+            <img src="img/topic3-4/S15.jpg" style="max-width: 40%;"> 
+            <img src="img/topic3-4/S16.jpg" style="max-width: 60%;"> 
+            
+               
+                <br>
+                <br>
+                <p>Información de:</p>
+                <ul>
+                   <li type="circle"><a href="https://www.universoformulas.com/matematicas/geometria/semejanza-triangulos/">Referencia 1</a>.</li>
+                   <li type="circle"><a href="https://matematicasn.blogspot.com/2015/12/semejanza-de-triangulos-ejercicios.html ">Referencia 2</a></li>
+                <ul>
+            
+            
+                <div class="block-btn">
+                <a href="/3/4/1"><i class="icon icon-chevron-left"></i></a>
+                <a href="/exam/4"><i class="icon icon-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <script src="js/profile_img.js"></script>
+</body>
+</html>
