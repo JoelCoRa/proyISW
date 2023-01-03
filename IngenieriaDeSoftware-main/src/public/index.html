@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>Mathebasics | Inicio</title>
+    <link rel="icon" href="./img/icon/icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200;300&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <title>English Now</title>
 </head>
 <body>
     <!-- MESSAGES -->
@@ -15,118 +17,104 @@
       <input type="hidden" id="flash-msg" value="<%=message%>">
     <%}%> -->
 
-    <!-- HEROIMAGE -->
-    <section class="img-index">
-        <div>
-            <img src="img/calculator.png" alt="">
-            <img src="img/iPad.png" alt="">
-            <img src="img/Folder.png" alt="">
+    <main>
+      <section class="seccion-bienvenida text-center">
+        <div class="bienvenida">
+          <h2 class="titulo-bienvenida fw-bold mt-3 align-middle">Bienvenido a English Now</h2>
+          <img class="img-login" src="img/login/logo2.png" alt="">
         </div>
-    </section>
+      </section> 
 
-    <section class="forms-section">
-        <h1 class="section-title">MATHE<span>basics</span></h1>
-        <div class="forms">
-          <div class="form-wrapper is-active">
-            <button type="button" class="switcher switcher-login">
-              Iniciar Sesi&oacute;n
-              <span class="underline"></span>
-            </button>
-            
-            <form class="form form-login" action="/signin" method="POST">
-              <fieldset>
-                <legend>Por favor ingresa tu correo electrónico y tu contraseña para iniciar sesión</legend>
-                
-                
-                <div class="row">
-                  <label for="login-email">Correo electr&oacute;nico</label>
-                  <input class="form-control" id="login-email" type="email" name="login_email" placeholder="Correo" required>
-                </div>
-                <div class="row">
-                  <label for="login-password">Contrase&ntilde;a</label>
-                  <input class="form-control" id="login-password" type="password" name="login_password" placeholder="Password"required>
-                </div>
-              </fieldset>
-              <button type="submit" class="btn-login" id="btn-login">Iniciar Sesi&oacute;n</button>
-            </form>
-
-
+      <div class="contenedor__todo">
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h3>¿Ya tienes cuenta?</h3>
+            <p>Inicia Sesión para logearte</p>
+            <button id="btn__iniciar-sesion">Iniciar Sesión</button>            
           </div>
-          <div class="form-wrapper">
-            <button type="button" class="switcher switcher-signup">
-              ¿Nuevo usuario?
-              <span class="underline"></span>
-            </button>
-           
-            <form class="form form-signup" action="/signup" method="POST">
-              <fieldset>
-                <legend>Por favor ingresa tu correo electrónico, tu contraseña y confirma tu contraseña para registrarte.</legend>
-                
-                
-
-
-                <div class="row"> 
-                  <div class="col">
-                    <label for="signup-name">Nombre</label>
-                    <input class="form-control" id="signup-name" type="text" name="signup_name" placeholder="Nombre"required>
-                </div>
-  
-                <div class="col">
-                   
-                      <label for="signup-apellido">Apellido</label>
-                      <input class="form-control" id="signup-apellido" type="text" name="signup_apellido" placeholder="Apellido" required>
-                    
-                    </div>
-                  </div>
-               
-                  
-
-                  <div class="row">
-                    <div class="col">
-                      <label for="signup-edad col-sm-2">Edad</label>
-                      <input type="number" class="form-control" id="signup-edad" name="signup_edad" placeholder="Edad" required>
-                    </div>
-  
-                    <div class="col">
-                      <label for="signup-telefono">Telefono</label>
-                      <input type="number" class="form-control" id="signup-telefono" name="signup_telefono" placeholder="Tel"  minlength="10" maxlength="10" required>
-                    </div>
-                  </div>
-
-
-                <div class="row">
-                  <div class="col">
-                    <label for="signup-user-name">Nombre de usuario</label>
-                    <input  class= "form-control" id="signup-user-name" type="text" name="signup_user_name" placeholder="User" required>
-                  </div>
-
-                <div class="col">
-                  <label for="signup-email">Correo electr&oacute;nico</label>
-                  <input class="form-control" id="signup-email" type="email" name="signup_email" placeholder="Correo" required>
-                </div>
-
-                </div>
-
-                <div class="row">
-                <label for="signup-password">Contraseña</label>
-                  <input class="form-control" id="signup-password" type="password" name="signup_password" placeholder="Password" required>
-                </div>
-
-                
-
-
-
-              </fieldset>
-              <button type="submit" class="btn-signup" id="btn-signup">Crear cuenta</button>
-            </form>
-            
+          <div class="caja__trasera-register">
+            <h3>¿Aun no tienes cuenta?</h3>
+            <p>Registrate para iniciar sesión</p>
+            <button id="btn__registrarse">Registrate</button>            
           </div>
         </div>
-        <span class="footer">Derechos Reservados 2021&reg; Team 1</span>
-      </section>
+        <div class="contenedor__login-register">
+          <form action="" class="formulario__login">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="Correo Electrónico">
+            <input type="password" placeholder="Contraseña">
+            <button>Entrar</button>
+          </form>
+
+          <form action="" class="formulario__register">
+            <h2>Registrate</h2>
+            <div class="registro">
+              <div class="">
+                <h4>Datos del Alumno</h4>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="email" placeholder="Correo Electrónico">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <select name="pais" id="pais">
+                  <option value="" selected disabled>--Selecciona--</option>
+                  <option value="">Alemania</option>
+                  <option value="">Argentina</option>
+                  <option value="">Australia</option>
+                  <option value="">Brasil</option>                
+                  <option value="">Canadá</option>                
+                  <option value="">Chile</option>
+                  <option value="">China</option>
+                  <option value="">Colombia</option>
+                  <option value="">Corea del Sur</option>
+                  <option value="">Costa Rica</option>
+                  <option value="">El Salvador</option>
+                  <option value="">España</option>
+                  <option value="">Francia</option>
+                  <option value="">Guatemala</option>
+                  <option value="">Inglaterra</option>
+                  <option value="">Japón</option>
+                  <option value="">México</option>
+                  <option value="">Nueva Zelanda</option>
+                  <option value="">Países Bajos</option>
+                  <option value="">Suecia</option>
+                  <option value="">USA</option>
+                  <option value="">Suiza</option>
+                  <option value="">Uruguay</option>
+                  <option value="">Venezuela</option>
+                </select>
+                <select name="nivel-ingles" id="nivel-ingles">
+                  <option value="" selected disabled>--Selecciona--</option>
+                  <option value="Básico">Básico</option>
+                  <option value="Intermedio">Intermedio</option>
+                  <option value="Avanzado">Avanzado</option>
+                  <option value="Nativo">Nativo</option>
+                </select>
+              </div>
+              <div class="">
+                <h4>Datos del Tutor</h4>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="email" placeholder="Correo Electrónico">
+              </div>
+            </div>           
+            
+            <button>Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <footer class="footer text-center">
+      <div>
+        <p class="text-footer mt-3">&copy; Derechos Reservados ESCOM 2022-2023</p>
+      </div>
+    </footer>
 
     <!-- TABS -->
       <script src="js/index.js"></script>
+      <script src="js/login.js"></script>
       <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
