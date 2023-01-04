@@ -7,7 +7,14 @@
 	box-sizing: border-box;
 }
 body{
-	background: linear-gradient(to right, #8e2de2, #4a00e0);
+	/* background: linear-gradient(to right, #e92006, #4a00e0); */
+	background: linear-gradient(to right, #cb2d3e, #ef473a);
+
+	background: #b92b27;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1e4b7e, #dd251f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -27,25 +34,25 @@ main{
 	padding: 1rem;
 }
 .titulo-bienvenida{
-	font-size: 5rem;
+	font-size: 3rem;
 	font-family: var(--primaryFont);	
 }
 
 .img-login{
-	max-width: 52rem;
+	max-width: 33rem;
 	margin: 1rem auto;
 	transform: rotate(-5deg);
 	filter: drop-shadow(5px 5px 10px #000);
 }
 .contenedor__todo{
 	width: 100%;
-	max-width: 60rem;
-	margin: 12rem auto 2rem auto;
+	max-width: 43rem;
+	margin: 9rem auto 2rem auto;
 	position: relative;
 }
 .caja__trasera{
 	width: 100%;
-	padding: 1rem 2rem;
+	padding: 1rem;
 	display: flex;
 	justify-content: center;
 	backdrop-filter: blur(5px);
@@ -54,8 +61,9 @@ main{
 	-moz-box-shadow: 3px 4px 22px 0px rgba(0,0,0,0.75);
 	box-shadow: 3px 4px 22px 0px rgba(0,0,0,0.75);
 }
+
 .caja__trasera div{
-	margin: 10rem 4rem;
+	margin: 2rem 4rem;
 	color: #FFF;
 	transition: all 500ms;
 }
@@ -65,14 +73,14 @@ main{
 }
 .caja__trasera div h3{
 	font-weight: 400;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 }
 .caja__trasera button{
-	padding: 1rem 4rem;
+	padding: 1rem;
 	border: 2px solid #FFF;
 	background: transparent;
-	border-radius: 3rem;
-	font-size: 1.6rem;
+	border-radius: 2rem;
+	font-size: 1rem;
 	font-family: var(--buttonFont);
 	font-weight: 600;
 	cursor: pointer;
@@ -91,47 +99,57 @@ main{
 	display: flex;
 	align-items: center;
 	width: 100%;
-	max-width: 27rem;
+	max-width: 20rem;
 	position: relative;
-	top: -18.5rem;
+	top: -10.5rem;
 	left: 1rem;
 	transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275	);
 }
 .contenedor__login-register form{
 	width: 100%;
-	padding: 1rem 1rem;
-	background: #e2d6af;
+	padding: 1rem;
+	background: #dbd4ba;
 	position: absolute;
 	border-radius: 2rem;
 }
 .contenedor__login-register .formulario__login{
-	margin-top: 4rem;
-	padding: 8rem 1rem;
+	margin-top: 2rem;
+	padding: 4rem 1rem;
 }
 .contenedor__login-register form h2{
-	font-size: 2rem;
+	font-size: 1.2rem;
 	text-align: center;
 	margin-bottom: 1rem;
 	color: #46A2FD;
 }
 .contenedor__login-register form input,
 .contenedor__login-register form select{
-	width: 100%;
-	margin-top: 1rem;
-	padding: 0.5rem;
+	width: 90%;
+	margin: 0 auto 0.2rem auto;
+	padding: 0.3rem;
 	border: none;
 	background-color: #c7c7c7;
-	font-size: 1.2rem;
+	font-size: 0.7rem;
 	outline: none;
 }
+.contenedor__login-register form input:focus{
+	-webkit-box-shadow: 0px 3px 20px 1px rgba(255, 133, 19, 0.712);
+	-moz-box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 20px 1px rgba(255, 0, 0, 0.445);
+}
+.etiqueta{
+	font-style: italic;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+}
 .contenedor__login-register form button{
-	padding: 1rem 4rem;
-	margin-top: 4rem;
+	padding: 1rem;
+	margin-top: 1rem;
 	width: 100%;
 	border: none;
 	border-radius: 3rem;
 	font-family: var(--buttonFont);
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	font-weight: bold;
 	background-color: #46A2Fd;
 	color: rgb(0, 0, 0);
@@ -145,8 +163,7 @@ main{
 }
 .formulario__login{
 	opacity: 1;
-	display: block;
-	
+	display: block;	
 }
 .formulario__register{
 	display: none;		
@@ -155,7 +172,8 @@ main{
 	display: block;
 }
 .registro h4{
-	margin: 1rem 0 0 0;
+	margin: 0.5rem 0 0 0;
+	font-size: 1rem;
 }
 
 /* Responsive
@@ -187,11 +205,13 @@ main{
 } */
 .footer{
 	width: 100%;
-	background-color: #000;
+	background-color: #202020;
 	color: #FFF;
 	position: absolute;
+	text-align: center;
 	bottom: 0;
 }
 .footer .text-footer{
-	font-size: 1.5rem;
+	margin: 0.4rem;
+	font-size: 1rem;
 }

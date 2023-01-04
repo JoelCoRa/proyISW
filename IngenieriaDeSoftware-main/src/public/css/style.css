@@ -60,7 +60,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+    background: linear-gradient(to right, #cb2d3e, #ef473a);
     font-family: Klavika;
 }
 

@@ -1,5 +1,4 @@
 
-
 document.getElementById("btn__registrarse").addEventListener("click", register);
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 
@@ -12,7 +11,7 @@ var caja_trasera_register = document.querySelector('.caja__trasera-register');
 
 function register(){
     form_register.style.display = "block";
-    cont_login_register.style.left = "32rem";
+    cont_login_register.style.left = "19.8rem";
     form_login.style.display = "none";
     caja_trasera_register.style.opacity = "0";
     caja_trasera_login.style.opacity = "1";
