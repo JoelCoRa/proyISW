@@ -1,6 +1,8 @@
 .content {
     background: #f0f0f3;
     position: relative;
+    width: 1000px;
+    height: 650px;
 }
 main > .tittle {
     display: flex;
