@@ -63,9 +63,9 @@ router.post('/registerTypeCourse', isLoggedIn, async (req, res) => {
     }
 });
 router.post('/updateUser', isLoggedIn, async (req, res) => {
-    const {user_email, user_password,user_telefono,user_name} = req.body;
+    const {user_email, user_password,user_nivel_ingles,user_name} = req.body;
     new_password = await helpers.encryptPassword(user_password);
-    await pool.query('UPDATE user set user_email = ?, user_password = ?, user_telefono= ?, user_name= ? WHERE id_user = ?', [user_email,new_password,user_telefono,user_name,req.user.id_user]);
+    await pool.query('UPDATE user set user_email = ?, user_password = ?, user_nivel_ingles= ?, user_name= ? WHERE id_user = ?', [user_email,new_password,user_nivel_ingles,user_name,req.user.id_user]);
     res.redirect('/profile');
 });
 router.post('/registerScore/:exam', isLoggedIn, async (req, res) => {
@@ -212,12 +212,17 @@ router.get('/memorama', isLoggedIn, (req, res) => {
     res.render('memorama.html');
 });
 
-router.get('/juego2', isLoggedIn, (req, res) => {
-    res.render('juego2.html');
+router.get('/juego_2_SLetras', isLoggedIn, (req, res) => {
+    res.render('juego_2_SLetras.html');
 });
 
 router.get('/juego3', isLoggedIn, (req, res) => {
     res.render('juego3.html');
+});
+
+
+router.get('/acerca_de', isLoggedIn, (req, res) => {
+    res.render('acerca_de.html');
 });
 
 

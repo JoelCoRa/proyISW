@@ -1,5 +1,5 @@
 .content {
-    background: #f0f0f3;
+    background-color: rgba(99,136,235,0.2);
     position: relative;
     width: 1000px;
     height: 650px;
@@ -8,7 +8,7 @@ main > .tittle {
     display: flex;
     align-items: center;
     width: 100%;
-    background: var(--blue5);
+    background: rgba(99, 136, 235, 1);
     padding: 2% 5%;
 }
 main > .tittle img {
@@ -53,8 +53,7 @@ main > .course_container .course {
 }
 main > .course_container .course.available {
     color: white;
-    background: var(--blue1);
-    background-image: -webkit-linear-gradient(315deg, var(--blue5) 0%, #009ffd 74%);
+    background: rgba(99, 136, 235, 1);
     box-shadow: none;
 }
 main > .course_container .course .level {

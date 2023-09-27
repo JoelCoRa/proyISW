@@ -30,18 +30,25 @@ passport.use('local.signup', new LocalStrategy({
     const {signup_email} = req.body;
     const{signup_name} = req.body;  //agregue yo
     const{signup_apellido} =req.body;
-    const{signup_edad} = req.body;  //agregue yo
-    const{signup_telefono} = req.body;  //agregue yo
+    const{signup_pais} = req.body;
+    const{signup_nivel_ingles} = req.body;
+    const{signup_nombre_tutor} =req.body;
+    const{signup_correo_tutor} = req.body;
+    
        
     const newUser = {
         user_name : username,
         user_password : passport,
         user_email : signup_email,
-        type_course: null,
+        type_course: null,//null
         name:signup_name,  //Agregue yo el name
         user_apellido:signup_apellido,
-        user_edad:signup_edad,
-        user_telefono:signup_telefono
+     //   user_edad:signup_edad,
+     //   user_telefono:signup_telefono
+     user_pais:signup_pais,
+     user_nivel_ingles:signup_nivel_ingles,
+     user_nombre_tutor:signup_nombre_tutor,
+     user_correo_tutor:signup_correo_tutor
 
     };
     newUser.user_password = await helpers.encryptPassword(password);

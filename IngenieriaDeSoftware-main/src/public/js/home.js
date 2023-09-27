@@ -29,7 +29,7 @@ const formClass = document.querySelector("#form_class");
 const formBtn = document.querySelector("#form-btn");
 
 guideButton.addEventListener('click', function() {
-    document.getElementById("type_course").value = 0;
+    document.getElementById("type_course").value = 1;
     formBtn.click();
 });
 freeButton.addEventListener('click', function() {

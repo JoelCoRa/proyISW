@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Recursos</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/course.css">
     <link rel="stylesheet" href="css/auxiliar.css">    
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/recursos.css">
     <link rel="icon" href="./img/logo/logo.png"> 
     
-  
-    <link rel="icon" href="./img/logo/logo.png">
-    <link rel="stylesheet" href="css/profile.css">
+   
 
- 
+   
     <!-- <link rel="stylesheet" href="css/font.css"> -->
 </head>
 <body class="body-expanded">
@@ -89,7 +88,7 @@
                 <img src="./img/avatars/avatar1.png" alt="avatar">
             </div>
             <div class="usuario">
-                <h3><%=user.user_name%> <br> <span><%=user.user_nivel_ingles %></span></h3>                
+                <h3><%=user.user_name %> <br> <span><%=user.user_nivel_ingles %></span></h3>                
             </div>
         </div>
         
@@ -114,7 +113,6 @@
                   </svg>
                 <p class="opcion">Unidades</p>
             </a>
-
             <a href="/progress" class="enlace-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notes" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -125,6 +123,7 @@
                   </svg>
                 <p class="opcion">Progreso</p>
             </a>
+
             <a href="/recursos" class="enlace-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="52" height="52" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -181,86 +180,45 @@
     
 
     <main class="content">
+        <div class="tittle">
+            <img src="img/recursos.png">
+            <h1>Topic 2 | (Tema 2)</h1>
+        </div>
+        <div class="containerre">
        
-    
-
-        <div class="user">
-            <h1>Perfil</h1>
-           
-               
-            <img src="img/avatar_9.png" alt="" id="avatar-profile">
-            <p class="user_name"><%=user.user_name%></p>
-            <p>E&nbsp;s&nbsp;t&nbsp;u&nbsp;d&nbsp;i&nbsp;a&nbsp;n&nbsp;t&nbsp;e</p>
-        </div>
-        <div class="info">
-            <h1>Información de usuario</h1>
-            <form action="/updateUser" method="post" id="form-update">
-              
-              
-                <div class="input-block">
-                    <label for="">Correo electrónico</label>
-                    <input type="email" name="user_email" id="user_nemail" value="<%=user.user_email%>" required>
-                </div>
-
-
-                
-                <div class="input-block">
-                    <label for="">Contraseña</label>
-                    <input type="password" name="user_password" id="user_password" placeholder="Nueva contraseña" required>
-                </div>
-
-                <div class="row">
-
-
-               
-                      <label for="signup_nivel-ingles" class="etiqueta">Nivel de Inglés</label>
-                 
-                      <input type="text" name="user_nivel_ingles" id="user_nivel_ingles"   value="<%=user.user_nivel_ingles%>"   placeholder="Nivel" required>
-
-        
-
-                    <div class="col">
-                    <label for="">User</label>
-                    <input type="text" name="user_name" id="user_name"  value="<%=user.user_name%>" placeholder="Nuevo User" required>
-                </div>
-
-                </div>
-
-
-
-
-
-                <input type="submit" value="Actualizar información" id="btn-update" onclick="return confirm('¿Deseas actualizar tus datos?');">
-            </form>
-            
-            <!--
-            <div class="info-container">
-                <div class="block-info">
-                    <p class="title">Curso</p>
-                    <p class="value">3er grado</p>
-                </div>
-                <div class="block-info">
-                    <p class="title">Tipo de curso</p>
-                    <p class="value">
-                        <% if (user.type_course === 0) { %>
-                            <%='Guiado'%>
-                        <%} else {%>
-                            <%='Libre'%>
-                        <%}%>
-                    </p>
-                </div>
+            <div class="card">
+                <img src="img/img1.jpg">
+                <h4>Naturaleza</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                <a href="#">Leer más</a>
             </div>
-                    -->
+            
+            <div class="card">
+                <img src="img/img2.jpg">
+                <h4>Comida</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                <a href="#">Leer más</a>
+            </div>
+            
+            <div class="card">
+                <img src="img/img3.jpg">
+                <h4>Tecnología</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                <a href="#">Leer más</a>
+            </div>
+            
+            <div class="block-btn">
+                <a href="/recursos.html"><i class="icon icon-chevron-left"></i></a>
+                <a href="/recursos_2.html"><i class="icon icon-chevron-right"></i></a>
+            </div>
 
         </div>
-
-
-
-
+        
+            
+        
+        
+      
     </main>
-
-
-    
     <form action="/registerTypeCourse" method="post" id="form_class">
         <input type="hidden" id="type_course" value="<%= user.type_course%>" name="type">
         <input type="submit" style="display: none;" id="form-btn">
@@ -268,7 +226,7 @@
 
 
     <script src="js/sidebar.js"></script>
-    <!--<script src="js/profile_img.js"></script>-->
+    <script src="js/profile_img.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

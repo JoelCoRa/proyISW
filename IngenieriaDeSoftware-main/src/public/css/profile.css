@@ -8,12 +8,12 @@ main > .info {
     height: 100%;
 }
 main > .user {
-    background: #f6f6f6;
+    
 }
 main > .user h1,
 main > .info h1 {
     text-align: center;
-    padding: 5% 0 10% 0;
+    padding: 5% 0 10% 0%;
     color: var(--blue2);
     margin-top: 20%;
 }
@@ -38,7 +38,7 @@ main > .user p {
     font-weight: 800;
 }
 main > .info form {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 main > .info form label {

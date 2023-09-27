@@ -17,6 +17,7 @@ main > .title h1 {
     font-weight: 100;
 }
 main > .block-topic {
+    background-color: aliceblue;
     display: block;
     width: 100%;
     height: 81%;
